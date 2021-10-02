@@ -1,3 +1,5 @@
+@import "iconos";
+
 /* COLORES*/
 $color-corporativo: #ff5959;
 $color-1: #bbb8b6;
@@ -25,11 +27,20 @@ body {
 
 .cabecera {
   background-color: $color-4;
+  padding-top: 80px;
+  height: 50vh;
+  @extend %display-flex-center-start;
 
   &__nav {
     background-color: $color-3;
+    width: 100vw;
     display: flex;
+    height: 50px;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 15% 0;
+    position: fixed;
+    top: 0;
   }
 
   &__burger {
@@ -43,6 +54,40 @@ body {
       background-color: $color-corporativo;
       height: 15%;
     }
+  }
+  &__usuario {
+    @extend %tamano-iconos;
+    background-image: url(/media/iconos/nav/icono_usuario.svg);
+    background-size: 50%;
+  }
+
+  &__iconos {
+    display: flex;
+  }
+
+  &__buscador {
+    @extend %tamano-iconos;
+    background-image: url(/media/iconos/nav/icono_lupa.svg);
+    background-color: $color-1;
+    background-size: 35%;
+  }
+  &__carrito {
+    @extend %tamano-iconos;
+    background-image: url(/media/iconos/nav/icono_carrito.svg);
+    background-size: 60%;
+  }
+  &__contador {
+    @extend %tamano-iconos;
+    @extend %display-flex-center;
+    background-color: $color-corporativo;
+  }
+  & a {
+    @extend %enlaces-iconos;
+    color: $color-4;
+  }
+
+  &__logo {
+    align-items: flex-start;
   }
 }
 
