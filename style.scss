@@ -59,9 +59,11 @@ body {
 
 .articulo {
   display: flex;
+  align-items: flex-end;
   &__titulo {
     position: absolute;
     background-color: $color-4;
     background: opacify($color: #ffffffe0, $amount: 0);
+    padding-left: 10px;
   }
 }

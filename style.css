@@ -43,11 +43,13 @@ body {
 
 .articulo {
   display: flex;
+  align-items: flex-end;
 }
 .articulo__titulo {
   position: absolute;
   background-color: #fff;
   background: rgba(255, 255, 255, 0.8784313725);
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
