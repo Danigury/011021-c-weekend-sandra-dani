@@ -5,6 +5,12 @@
   background-repeat: no-repeat;
 }
 
+.cabecera a {
+  text-decoration: none;
+  font-size: 130%;
+  display: inline;
+}
+
 .cabecera__contador {
   display: flex;
   justify-content: center;
@@ -28,11 +34,13 @@ body {
 }
 .cabecera__nav {
   background-color: #f8f8f8;
+  width: 100vw;
   display: flex;
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5% 0;
+  padding: 0 15% 0;
+  position: fixed;
 }
 .cabecera__burger {
   height: 20px;
@@ -64,10 +72,8 @@ body {
 .cabecera__contador {
   background-color: #ff5959;
 }
-.cabecera__contador a {
-  text-decoration: none;
+.cabecera a {
   color: #fff;
-  font-size: 130%;
 }
 
 /*# sourceMappingURL=style.css.map */

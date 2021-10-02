@@ -29,11 +29,13 @@ body {
 
   &__nav {
     background-color: $color-3;
+    width: 100vw;
     display: flex;
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5% 0;
+    padding: 0 15% 0;
+    position: fixed;
   }
   &__burger {
     height: 20px;
@@ -51,6 +53,7 @@ body {
     background-image: url(/media/iconos/nav/icono_usuario.svg);
     background-size: 50%;
   }
+
   &__iconos {
     display: flex;
   }
@@ -70,10 +73,9 @@ body {
     @extend %tamano-iconos;
     @extend %display-flex-center;
     background-color: $color-corporativo;
-    a {
-      text-decoration: none;
-      color: $color-4;
-      font-size: 130%;
-    }
+  }
+  & a {
+    @extend %enlaces-iconos;
+    color: $color-4;
   }
 }
