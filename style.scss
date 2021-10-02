@@ -19,4 +19,26 @@ $color-secundario-4: #8e789d;
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.cabecera {
+  background-color: $color-4;
+
+  &__nav {
+    background-color: $color-3;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__burger {
+    height: 20px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & div {
+      background-color: $color-corporativo;
+      height: 15%;
+    }
+  }
 }
