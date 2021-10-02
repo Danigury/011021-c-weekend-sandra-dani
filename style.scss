@@ -19,4 +19,13 @@ $color-secundario-4: #8e789d;
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.cabecera {
+  background-color: $color-4;
+
+  &__nav {
+    background-color: $color-3;
+  }
 }
