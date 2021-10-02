@@ -26,6 +26,9 @@ body {
 }
 .cabecera {
   background-color: $color-4;
+  padding-top: 80px;
+  height: 50vh;
+  @extend %display-flex-center-start;
 
   &__nav {
     background-color: $color-3;
@@ -36,6 +39,7 @@ body {
     align-items: center;
     padding: 0 15% 0;
     position: fixed;
+    top: 0;
   }
   &__burger {
     height: 20px;
@@ -77,5 +81,9 @@ body {
   & a {
     @extend %enlaces-iconos;
     color: $color-4;
+  }
+
+  &__logo {
+    align-items: flex-start;
   }
 }
