@@ -1,19 +1,5 @@
-@import "iconos";
-
-/* COLORES*/
-$color-corporativo: #ff5959;
-$color-1: #bbb8b6;
-$color-2: #e8e6e5;
-$color-3: #f8f8f8;
-$color-4: #fff;
-$color-5: #000;
-$color-textos: #67635f;
-
-/*COLORES SECUNDARIOS*/
-$color-secundario-1: #6199af;
-$color-secundario-2: #f6b436;
-$color-secundario-3: #9eaa4d;
-$color-secundario-4: #8e789d;
+@import "configs";
+@import "extends";
 
 * {
   box-sizing: border-box;
@@ -25,6 +11,7 @@ body {
   padding: 0;
 }
 
+/*HEADER*/
 .cabecera {
   background-color: $color-4;
   padding-top: 80px;
@@ -32,14 +19,15 @@ body {
   @extend %display-flex-center-start;
 
   &__nav {
+    @extend %padding-laterales;
     background-color: $color-3;
     width: 100vw;
     display: flex;
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15% 0;
     position: fixed;
+    z-index: 1;
     top: 0;
   }
 
@@ -148,5 +136,34 @@ body {
     h3 {
       padding-left: 30px;
     }
+  }
+}
+
+/*PEDIDOS*/
+.pedidos {
+  @extend %display-flex-center;
+  @extend %ancho-completo;
+  background-color: $color-2;
+  flex-direction: column;
+
+  &__fila {
+    @extend %ancho-completo;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__envio {
+    @extend %modulos-pedidos;
+  }
+
+  &__horario {
+    @extend %modulos-pedidos;
+  }
+
+  &__devolucion {
+    @extend %modulos-pedidos;
+  }
+
+  &__reembolso {
+    @extend %modulos-pedidos;
   }
 }

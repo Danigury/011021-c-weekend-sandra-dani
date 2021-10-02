@@ -1,3 +1,5 @@
+/* COLORES*/
+/*COLORES SECUNDARIOS*/
 .cabecera__contador, .cabecera__carrito, .cabecera__buscador, .cabecera__usuario {
   width: 50px;
   height: 50px;
@@ -11,7 +13,7 @@
   display: inline;
 }
 
-.cabecera__contador {
+.pedidos, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +25,29 @@
   align-items: start;
 }
 
-/* COLORES*/
-/*COLORES SECUNDARIOS*/
+.pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
+  width: 40vw;
+  height: 30vh;
+  background-color: red;
+  color: #67635f;
+  text-align: center;
+  padding: 5%;
+}
+.pedidos__reembolso h2, .pedidos__devolucion h2, .pedidos__horario h2, .pedidos__envio h2 {
+  font-size: 4vw;
+}
+.pedidos__reembolso p, .pedidos__devolucion p, .pedidos__horario p, .pedidos__envio p {
+  font-size: 3vw;
+}
+
+.pedidos__fila, .pedidos {
+  width: 100vw;
+}
+
+.cabecera__nav {
+  padding: 0 16vw 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,6 +58,7 @@ body {
   padding: 0;
 }
 
+/*HEADER*/
 .cabecera {
   background-color: #fff;
   padding-top: 80px;
@@ -47,8 +71,8 @@ body {
   height: 50px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15% 0;
   position: fixed;
+  z-index: 1;
   top: 0;
 }
 .cabecera__burger {
@@ -141,6 +165,16 @@ body {
 }
 .articulo__titulo h3 {
   padding-left: 30px;
+}
+
+/*PEDIDOS*/
+.pedidos {
+  background-color: #e8e6e5;
+  flex-direction: column;
+}
+.pedidos__fila {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
