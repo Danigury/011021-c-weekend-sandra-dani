@@ -1,0 +1,53 @@
+/* COLORES*/
+/*COLORES SECUNDARIOS*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.fiestas {
+  background-color: #f8f8f8;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.contenedor-principal__imagen {
+  position: absolute;
+  top: -4.5%;
+}
+
+.fiestas__titulo {
+  border-style: solid;
+  border-right: 0;
+  border-left: 0;
+  padding: 20px 50px 20px 50px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  line-height: 5px;
+}
+
+.articulo {
+  display: flex;
+}
+.articulo__titulo {
+  position: absolute;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.8784313725);
+}
+
+/*# sourceMappingURL=style.css.map */
