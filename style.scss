@@ -42,3 +42,50 @@ body {
     }
   }
 }
+
+.fiestas {
+  background-color: $color-3;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &__imagen {
+    position: absolute;
+    top: -4.5%;
+  }
+}
+
+.fiestas {
+  &__titulo {
+    border-style: solid;
+    border-right: 0;
+    border-left: 0;
+    padding: 20px 50px 20px 50px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    line-height: 5px;
+  }
+}
+
+.articulo {
+  display: flex;
+  align-items: flex-end;
+  &__titulo {
+    position: absolute;
+    background-color: $color-4;
+    background: opacify($color: #ffffffe0, $amount: 0);
+    padding-left: 10px;
+  }
+}
