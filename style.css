@@ -88,6 +88,22 @@ body {
   align-items: flex-start;
 }
 
+/*FIESTAS*/
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.contenedor-principal .contenedor-articulos {
+  margin-top: 50px;
+}
+.contenedor-principal__imagen {
+  position: absolute;
+  top: -5.27%;
+}
+
 .fiestas {
   background-color: #f8f8f8;
   width: 100vw;
@@ -97,19 +113,6 @@ body {
   flex-direction: column;
   padding-top: 100px;
 }
-
-.contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.contenedor-principal__imagen {
-  position: absolute;
-  top: -4.5%;
-}
-
 .fiestas__titulo {
   border: 3px solid black;
   border-right: 0;
@@ -122,6 +125,15 @@ body {
 .fiestas img {
   width: 350px;
   height: 170px;
+}
+.fiestas .boton {
+  margin-top: 50px;
+  background-color: #ff5959;
+  height: 45px;
+  width: 100px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border: none;
 }
 
 .articulo {
@@ -141,6 +153,7 @@ body {
 }
 .articulo__titulo h3 {
   padding-left: 30px;
+  color: #67635f;
 }
 
 /*# sourceMappingURL=style.css.map */
