@@ -27,5 +27,18 @@ body {
 
   &__nav {
     background-color: $color-3;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__burger {
+    height: 20px;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & div {
+      background-color: $color-corporativo;
+      height: 15%;
+    }
   }
 }
