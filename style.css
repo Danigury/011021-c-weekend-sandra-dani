@@ -1,3 +1,16 @@
+.cabecera__contador, .cabecera__carrito, .cabecera__buscador, .cabecera__usuario {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cabecera__contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* COLORES*/
 /*COLORES SECUNDARIOS*/
 * {
@@ -16,7 +29,10 @@ body {
 .cabecera__nav {
   background-color: #f8f8f8;
   display: flex;
+  height: 50px;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5% 0;
 }
 .cabecera__burger {
   height: 20px;
@@ -28,6 +44,30 @@ body {
 .cabecera__burger div {
   background-color: #ff5959;
   height: 15%;
+}
+.cabecera__usuario {
+  background-image: url(/media/iconos/nav/icono_usuario.svg);
+  background-size: 50%;
+}
+.cabecera__iconos {
+  display: flex;
+}
+.cabecera__buscador {
+  background-image: url(/media/iconos/nav/icono_lupa.svg);
+  background-color: #bbb8b6;
+  background-size: 35%;
+}
+.cabecera__carrito {
+  background-image: url(/media/iconos/nav/icono_carrito.svg);
+  background-size: 60%;
+}
+.cabecera__contador {
+  background-color: #ff5959;
+}
+.cabecera__contador a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 130%;
 }
 
 /*# sourceMappingURL=style.css.map */
