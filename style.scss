@@ -176,10 +176,11 @@ body {
     &:hover,
     &:active {
       color: $color-corporativo;
-      &__imagen-envio {
+      .pedidos__imagen-envio {
         @include pedidos__iconos(
           $pedidos__iconos: url(./media/iconos/pedidos/icono_envio-hover.svg)
         );
+        background-size: 80%;
       }
     }
   }
@@ -190,7 +191,18 @@ body {
 
   &__horario {
     @extend %modulos-pedidos;
+    &:hover,
+    &:active {
+      color: $color-corporativo;
+      .pedidos__imagen-horario {
+        @include pedidos__iconos(
+          $pedidos__iconos: url(./media/iconos/pedidos/icono_horario-hover.svg)
+        );
+        background-size: 50%;
+      }
+    }
   }
+
   &__imagen-horario {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg)
@@ -200,6 +212,16 @@ body {
 
   &__devolucion {
     @extend %modulos-pedidos;
+    &:hover,
+    &:active {
+      color: $color-corporativo;
+      .pedidos__imagen-devolucion {
+        @include pedidos__iconos(
+          $pedidos__iconos:
+            url(./media/iconos/pedidos/icono_devolucion-hover.svg)
+        );
+      }
+    }
   }
   &__imagen-devolucion {
     @include pedidos__iconos(
@@ -209,7 +231,18 @@ body {
 
   &__reembolso {
     @extend %modulos-pedidos;
+    &:hover,
+    &:active {
+      color: $color-corporativo;
+      .pedidos__imagen-reembolso {
+        @include pedidos__iconos(
+          $pedidos__iconos:
+            url(./media/iconos/pedidos/icono_reembolso-hover.svg)
+        );
+      }
+    }
   }
+
   &__imagen-reembolso {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg)

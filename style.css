@@ -223,13 +223,14 @@ body {
 .pedidos__envio:hover, .pedidos__envio:active {
   color: #ff5959;
 }
-.pedidos__envio:hover__imagen-envio, .pedidos__envio:active__imagen-envio {
+.pedidos__envio:hover .pedidos__imagen-envio, .pedidos__envio:active .pedidos__imagen-envio {
   background-image: url(./media/iconos/pedidos/icono_envio-hover.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 80%;
 }
 .pedidos__imagen-envio {
   background-image: url(./media/iconos/pedidos/icono_envio.svg);
@@ -240,6 +241,18 @@ body {
   height: 20vw;
   background-size: 80%;
 }
+.pedidos__horario:hover, .pedidos__horario:active {
+  color: #ff5959;
+}
+.pedidos__horario:hover .pedidos__imagen-horario, .pedidos__horario:active .pedidos__imagen-horario {
+  background-image: url(./media/iconos/pedidos/icono_horario-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+  background-size: 50%;
+}
 .pedidos__imagen-horario {
   background-image: url(./media/iconos/pedidos/icono_horario.svg);
   background-repeat: no-repeat;
@@ -249,8 +262,30 @@ body {
   height: 20vw;
   background-size: 50%;
 }
+.pedidos__devolucion:hover, .pedidos__devolucion:active {
+  color: #ff5959;
+}
+.pedidos__devolucion:hover .pedidos__imagen-devolucion, .pedidos__devolucion:active .pedidos__imagen-devolucion {
+  background-image: url(./media/iconos/pedidos/icono_devolucion-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
 .pedidos__imagen-devolucion {
   background-image: url(./media/iconos/pedidos/icono_devolucion.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+.pedidos__reembolso:hover, .pedidos__reembolso:active {
+  color: #ff5959;
+}
+.pedidos__reembolso:hover .pedidos__imagen-reembolso, .pedidos__reembolso:active .pedidos__imagen-reembolso {
+  background-image: url(./media/iconos/pedidos/icono_reembolso-hover.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
