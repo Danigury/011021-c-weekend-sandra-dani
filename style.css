@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.footer .boletin__formulario div, .footer .boletin__formulario, .footer .boletin, .pedidos__fila, .pedidos, .cabecera__contador {
+.footer .boletin__formulario div, .footer .boletin, .pedidos__fila, .pedidos, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,12 @@
 .cabecera {
   display: flex;
   justify-content: center;
+  align-items: start;
+}
+
+.footer .boletin__formulario {
+  display: flex;
+  justify-content: space-between;
   align-items: start;
 }
 
@@ -305,8 +311,12 @@ body {
 }
 .footer .boletin__formulario {
   width: 100%;
+  height: 25vw;
   flex-direction: column;
   background-color: antiquewhite;
+}
+.footer .boletin__formulario div {
+  width: 100%;
 }
 .footer .boletin__email {
   width: 100%;
