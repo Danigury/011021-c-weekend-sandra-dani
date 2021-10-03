@@ -301,16 +301,16 @@ body {
 
   .informacion {
     @extend %display-flex-center;
+    margin-bottom: 15vw;
+
     ul {
       padding: 0;
       @extend %display-flex-center;
       flex-direction: column;
       list-style-type: none;
-      margin-bottom: 30vw;
 
       li {
-        margin-top: 0;
-        padding-top: 0;
+        margin: 0;
         color: $color-corporativo;
         font-size: smaller;
         font-weight: bolder;
