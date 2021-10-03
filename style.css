@@ -13,9 +13,7 @@
   display: inline;
 }
 
-
-.pedidos__fila, .pedidos, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .cabecera__contador {
-
+.boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .pedidos__fila, .pedidos, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +25,7 @@
   align-items: start;
 }
 
-.footer .boletin__formulario {
+.boletin__formulario {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -52,15 +50,15 @@
   margin-top: 1vw;
 }
 
-.footer .boletin, .pedidos__fila, .pedidos {
+.boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
-.footer .boletin, .pedidos__fila, .cabecera__nav {
+.boletin, .pedidos__fila, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
-.footer .boletin__formulario div a, body {
+.boletin__formulario div a, body {
   color: #67635f;
 }
 
@@ -68,7 +66,7 @@
   font-size: 3vw;
 }
 
-.footer .boletin__boton-suscribete {
+.boletin__boton-suscribete, .fiestas .boton {
   background-color: #ff5959;
   height: 8vw;
   width: 100%;
@@ -255,9 +253,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.footer h2 {
-  color: #67635f;
-}
 .footer .rrss ul {
   padding: 0;
 }
@@ -356,18 +351,19 @@ body {
   font-weight: lighter;
   font-size: small;
 }
-.footer .boletin {
+
+.boletin {
   flex-direction: column;
 }
-.footer .boletin__formulario {
+.boletin__formulario {
   width: 100%;
   height: 25vw;
   flex-direction: column;
 }
-.footer .boletin__formulario div {
+.boletin__formulario div {
   width: 100%;
 }
-.footer .boletin__contenedor {
+.boletin__contenedor {
   flex-direction: column;
   width: 100%;
   height: 50vw;
@@ -375,16 +371,16 @@ body {
   border-bottom: 1px solid #67635f;
   margin: 5vw 0 5vw;
 }
-.footer .boletin__email {
+.boletin__email {
   width: 100%;
   height: 8vw;
   border-radius: 0;
   border: 1px solid #67635f;
 }
-.footer .boletin__privacidad {
+.boletin__privacidad {
   font-size: 2.5vw;
 }
-.footer .boletin__privacidad:before {
+.boletin__privacidad:before {
   content: url("/media/iconos/footer/icono_checkbox.svg");
   display: block;
   height: 4vw;
