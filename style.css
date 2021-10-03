@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.pedidos__fila, .pedidos, .footer .rrss__titulo, .cabecera__contador {
+.pedidos__fila, .pedidos, .footer .footer__copyright, .footer .rrss__titulo, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,6 +247,10 @@ body {
   width: 100vw;
   background-color: #ff5959;
   color: white;
+}
+.footer .footer__copyright .footer__titulo {
+  font-weight: lighter;
+  font-size: small;
 }
 
 /*PEDIDOS*/

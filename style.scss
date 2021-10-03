@@ -200,6 +200,11 @@ body {
     width: 100vw;
     background-color: $color-corporativo;
     color: white;
+    @extend %display-flex-center;
+    .footer__titulo {
+      font-weight: lighter;
+      font-size: small;
+    }
   }
 }
 
@@ -218,9 +223,11 @@ body {
     @extend %display-flex-center;
     height: 30vh;
   }
+
   &__envio {
     @extend %modulos-pedidos;
   }
+
   &__imagen-envio {
     @include pedidos__iconos;
   }
@@ -228,6 +235,7 @@ body {
   &__horario {
     @extend %modulos-pedidos;
   }
+
   &__imagen-horario {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg)
@@ -237,6 +245,7 @@ body {
   &__devolucion {
     @extend %modulos-pedidos;
   }
+
   &__imagen-devolucion {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg)
@@ -246,6 +255,7 @@ body {
   &__reembolso {
     @extend %modulos-pedidos;
   }
+
   &__imagen-reembolso {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg)
