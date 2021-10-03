@@ -22,6 +22,11 @@
   justify-content: center;
   align-items: start;
 }
+%display-flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
 
 %modulos-pedidos {
   display: flex;
@@ -51,12 +56,22 @@
   padding: 0 16vw 0;
 }
 
+%color-textos {
+  color: $color-textos;
+}
+
+%titulos-boletin {
+  font-size: 3vw;
+}
+
 %botones {
   background-color: $color-corporativo;
-  height: 7vw;
-  width: 20vw;
-  font-weight: bold;
+  height: 8vw;
+  width: 100%;
+  border: 0;
+
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  border: none;
+  font-weight: bold;
+  font-size: 3.2vw;
 }
