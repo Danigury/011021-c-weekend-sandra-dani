@@ -83,6 +83,10 @@
   font-size: 3.2vw;
 }
 
+.footer .rrss, .pedidos {
+  padding-top: 10vw;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -204,7 +208,6 @@ body {
 .pedidos {
   background-color: #e8e6e5;
   flex-direction: column;
-  padding-top: 10vw;
   margin-top: 30vw;
 }
 .pedidos__fila {

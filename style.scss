@@ -151,9 +151,9 @@ body {
 .pedidos {
   @extend %display-flex-center;
   @extend %ancho-completo;
+  @extend %padding-top-secciones;
   background-color: $color-2;
   flex-direction: column;
-  padding-top: 10vw;
   margin-top: 30vw;
 
   &__fila {
@@ -211,6 +211,7 @@ body {
     @extend %titulos-boletin;
   }
   .rrss {
+    @extend %padding-top-secciones;
     ul {
       padding: 0;
     }
