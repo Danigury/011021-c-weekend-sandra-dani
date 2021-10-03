@@ -1,4 +1,5 @@
 @import "configs";
+/*@import "mixins";*/
 @import "extends";
 
 * {
@@ -143,11 +144,13 @@ body {
 .pedidos {
   @extend %display-flex-center;
   @extend %ancho-completo;
+
   background-color: $color-2;
   flex-direction: column;
 
   &__fila {
     @extend %ancho-completo;
+    @extend %padding-laterales;
     display: flex;
     justify-content: space-between;
   }

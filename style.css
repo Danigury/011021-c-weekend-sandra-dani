@@ -1,5 +1,6 @@
 /* COLORES*/
 /*COLORES SECUNDARIOS*/
+/*@import "mixins";*/
 .cabecera__contador, .cabecera__carrito, .cabecera__buscador, .cabecera__usuario {
   width: 50px;
   height: 50px;
@@ -28,23 +29,42 @@
 .pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
   width: 40vw;
   height: 30vh;
-  background-color: red;
   color: #67635f;
   text-align: center;
-  padding: 5%;
+  /*
+  &__imagen-envio {
+    @include pedidos__iconos;
+  }
+  &__imagen-horario {
+    @include pedidos__iconos {
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg);
+    }
+  }
+  &__imagen-devolucion {
+    @include pedidos__iconos {
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg);
+    }
+  }
+  &__imagen-reembolso {
+    @include pedidos__iconos {
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg);
+    }
+  }*/
 }
 .pedidos__reembolso h2, .pedidos__devolucion h2, .pedidos__horario h2, .pedidos__envio h2 {
-  font-size: 4vw;
+  font-size: 3.3vw;
+  margin-bottom: 0;
 }
 .pedidos__reembolso p, .pedidos__devolucion p, .pedidos__horario p, .pedidos__envio p {
-  font-size: 3vw;
+  font-size: 2.5vw;
+  margin-top: 1vw;
 }
 
 .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
-.cabecera__nav {
+.pedidos__fila, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
