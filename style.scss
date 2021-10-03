@@ -201,10 +201,8 @@ body {
 
 /*FOOTER*/
 .footer {
+  @extend %display-flex-center;
   background-color: $color-3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   h2 {
