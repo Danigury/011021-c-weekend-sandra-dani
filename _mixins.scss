@@ -6,6 +6,7 @@
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
 }
 
 @mixin pedidos__iconos(
@@ -18,5 +19,3 @@
   width: 20vw;
   height: 20vw;
 }
-
-

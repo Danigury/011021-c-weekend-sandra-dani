@@ -113,7 +113,7 @@ body {
     border: 3px solid black;
     border-right: 0;
     border-left: 0;
-    padding: 20px 50px 20px 50px;
+    @extend %padding-laterales;
     font-size: 5vw;
     font-weight: 900;
     letter-spacing: 6px;
@@ -123,13 +123,8 @@ body {
     height: 170px;
   }
   .boton {
+    @extend %botones;
     margin-top: 50px;
-    background-color: $color-corporativo;
-    height: 45px;
-    width: 100px;
-    font-family: "Source Sans Pro", sans-serif;
-    color: white;
-    border: none;
   }
 }
 
@@ -217,9 +212,12 @@ body {
     @extend %titulos-boletin;
   }
   .rrss {
+    ul {
+      padding: 0;
+    }
+
     &__titulo {
-      display: flex;
-      justify-content: center;
+      @extend %display-flex-center;
     }
 
     &__lista {
@@ -253,6 +251,18 @@ body {
       );
     }
   }
+  
+  .footer__copyright {
+    width: 100vw;
+    background-color: $color-corporativo;
+    color: white;
+    @extend %display-flex-center;
+    .footer__titulo {
+      font-weight: lighter;
+      font-size: small;
+    }
+  }
+}
 
   .boletin {
     @extend %ancho-completo;
