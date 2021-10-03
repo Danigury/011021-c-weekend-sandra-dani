@@ -67,7 +67,8 @@ body {
     @extend %tamano-iconos;
     background-image: url(/media/iconos/nav/icono_carrito.svg);
     background-size: 60%;
-    &:active {
+    &:active,
+    &:hover {
       background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
       background-color: $color-corporativo;
     }
@@ -172,6 +173,15 @@ body {
   }
   &__envio {
     @extend %modulos-pedidos;
+    &:hover,
+    &:active {
+      color: $color-corporativo;
+      &__imagen-envio {
+        @include pedidos__iconos(
+          $pedidos__iconos: url(./media/iconos/pedidos/icono_envio-hover.svg)
+        );
+      }
+    }
   }
   &__imagen-envio {
     @include pedidos__iconos;

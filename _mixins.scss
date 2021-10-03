@@ -20,6 +20,10 @@
   height: 20vw;
 }
 
+@mixin pedidos__iconos-hover($pedidos__iconos-hover: url()) {
+  color: $color-corporativo;
+}
+
 @mixin informacion__iconos(
   $informacion__iconos: url(./media/iconos/footer/icono_contacto.svg)
 ) {

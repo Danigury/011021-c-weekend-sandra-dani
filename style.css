@@ -141,7 +141,7 @@ body {
   background-image: url(/media/iconos/nav/icono_carrito.svg);
   background-size: 60%;
 }
-.cabecera__carrito:active {
+.cabecera__carrito:active, .cabecera__carrito:hover {
   background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
   background-color: #ff5959;
 }
@@ -219,6 +219,17 @@ body {
 }
 .pedidos__fila {
   height: 30vh;
+}
+.pedidos__envio:hover, .pedidos__envio:active {
+  color: #ff5959;
+}
+.pedidos__envio:hover__imagen-envio, .pedidos__envio:active__imagen-envio {
+  background-image: url(./media/iconos/pedidos/icono_envio-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
 }
 .pedidos__imagen-envio {
   background-image: url(./media/iconos/pedidos/icono_envio.svg);
