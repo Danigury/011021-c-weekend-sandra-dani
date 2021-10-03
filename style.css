@@ -60,7 +60,7 @@
   width: 100vw;
 }
 
-.boletin, .pedidos__fila, .fiestas__titulo, .cabecera__nav {
+.boletin, .pedidos__fila, .articulo, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
@@ -173,11 +173,6 @@ body {
   letter-spacing: 6px;
   color: #000;
 }
-.fiestas img {
-  /*nose si esto deberia ir con vw/vh*/
-  width: 350px;
-  height: 170px;
-}
 .fiestas .boton {
   margin-top: 50px;
   width: 35vw;
@@ -196,8 +191,8 @@ body {
   align-items: center;
   background-color: #fff;
   background: rgba(255, 255, 255, 0.8784313725);
-  height: 80px;
-  width: 200px;
+  height: 12vh;
+  width: 42vw;
 }
 .articulo__titulo h3 {
   padding-left: 30px;
