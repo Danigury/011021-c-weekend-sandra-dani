@@ -180,6 +180,8 @@ body {
 }
 .fiestas .boton {
   margin-top: 50px;
+  width: 35vw;
+  height: 9vh;
 }
 
 .articulo {

@@ -121,6 +121,9 @@ body {
   .boton {
     @extend %botones;
     margin-top: 50px;
+
+    width: 35vw;
+    height: 9vh;
   }
 }
 
