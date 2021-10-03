@@ -112,7 +112,7 @@ body {
     border: 3px solid black;
     border-right: 0;
     border-left: 0;
-    padding: 20px 50px 20px 50px;
+    @extend %padding-laterales;
     font-size: 5vw;
     font-weight: 900;
     letter-spacing: 6px;
@@ -122,13 +122,8 @@ body {
     height: 170px;
   }
   .boton {
+    @extend %botones;
     margin-top: 50px;
-    background-color: $color-corporativo;
-    height: 45px;
-    width: 100px;
-    font-family: "Source Sans Pro", sans-serif;
-    color: white;
-    border: none;
   }
 }
 
@@ -161,9 +156,12 @@ body {
   align-items: center;
   flex-direction: column;
   .rrss {
+    ul {
+      padding: 0;
+    }
+
     &__titulo {
-      display: flex;
-      justify-content: center;
+      @extend %display-flex-center;
     }
 
     &__lista {
@@ -197,6 +195,17 @@ body {
       );
     }
   }
+
+  .footer__copyright {
+    width: 100vw;
+    background-color: $color-corporativo;
+    color: white;
+    @extend %display-flex-center;
+    .footer__titulo {
+      font-weight: lighter;
+      font-size: small;
+    }
+  }
 }
 
 /*PEDIDOS*/
@@ -214,9 +223,11 @@ body {
     @extend %display-flex-center;
     height: 30vh;
   }
+
   &__envio {
     @extend %modulos-pedidos;
   }
+
   &__imagen-envio {
     @include pedidos__iconos;
   }
@@ -224,6 +235,7 @@ body {
   &__horario {
     @extend %modulos-pedidos;
   }
+
   &__imagen-horario {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg)
@@ -233,6 +245,7 @@ body {
   &__devolucion {
     @extend %modulos-pedidos;
   }
+
   &__imagen-devolucion {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg)
@@ -242,6 +255,7 @@ body {
   &__reembolso {
     @extend %modulos-pedidos;
   }
+
   &__imagen-reembolso {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg)

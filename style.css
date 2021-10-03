@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.pedidos__fila, .pedidos, .cabecera__contador {
+.pedidos__fila, .pedidos, .footer .footer__copyright, .footer .rrss__titulo, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,8 +48,18 @@
   width: 100vw;
 }
 
-.pedidos__fila, .cabecera__nav {
+.pedidos__fila, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
+}
+
+.fiestas .boton {
+  background-color: #ff5959;
+  height: 7vw;
+  width: 20vw;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border: none;
 }
 
 * {
@@ -145,7 +155,6 @@ body {
   border: 3px solid black;
   border-right: 0;
   border-left: 0;
-  padding: 20px 50px 20px 50px;
   font-size: 5vw;
   font-weight: 900;
   letter-spacing: 6px;
@@ -156,12 +165,6 @@ body {
 }
 .fiestas .boton {
   margin-top: 50px;
-  background-color: #ff5959;
-  height: 45px;
-  width: 100px;
-  font-family: "Source Sans Pro", sans-serif;
-  color: white;
-  border: none;
 }
 
 .articulo {
@@ -191,9 +194,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.footer .rrss__titulo {
-  display: flex;
-  justify-content: center;
+.footer .rrss ul {
+  padding: 0;
 }
 .footer .rrss__lista {
   display: flex;
@@ -207,6 +209,7 @@ body {
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
 }
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
@@ -214,6 +217,7 @@ body {
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
 }
 .footer .rrss__lista-instagram {
   background-image: url(./media/iconos/rrss/icono_instagram.svg);
@@ -221,6 +225,7 @@ body {
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
 }
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
@@ -228,6 +233,7 @@ body {
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
 }
 .footer .rrss__lista-youtube {
   background-image: url(./media/iconos/rrss/icono_youtube.svg);
@@ -235,6 +241,16 @@ body {
   background-size: cover;
   height: 4vw;
   width: 4vw;
+  margin: 2px;
+}
+.footer .footer__copyright {
+  width: 100vw;
+  background-color: #ff5959;
+  color: white;
+}
+.footer .footer__copyright .footer__titulo {
+  font-weight: lighter;
+  font-size: small;
 }
 
 /*PEDIDOS*/

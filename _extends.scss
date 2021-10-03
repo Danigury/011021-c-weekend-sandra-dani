@@ -50,3 +50,13 @@
 %padding-laterales {
   padding: 0 16vw 0;
 }
+
+%botones {
+  background-color: $color-corporativo;
+  height: 7vw;
+  width: 20vw;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border: none;
+}
