@@ -1,6 +1,5 @@
 /* COLORES*/
 /*COLORES SECUNDARIOS*/
-/*@import "mixins";*/
 .cabecera__contador, .cabecera__carrito, .cabecera__buscador, .cabecera__usuario {
   width: 50px;
   height: 50px;
@@ -14,7 +13,7 @@
   display: inline;
 }
 
-.pedidos, .cabecera__contador {
+.pedidos__fila, .pedidos, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,33 +26,18 @@
 }
 
 .pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
   width: 40vw;
   height: 30vh;
   color: #67635f;
   text-align: center;
-  /*
-  &__imagen-envio {
-    @include pedidos__iconos;
-  }
-  &__imagen-horario {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg);
-    }
-  }
-  &__imagen-devolucion {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg);
-    }
-  }
-  &__imagen-reembolso {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg);
-    }
-  }*/
 }
 .pedidos__reembolso h2, .pedidos__devolucion h2, .pedidos__horario h2, .pedidos__envio h2 {
   font-size: 3.3vw;
-  margin-bottom: 0;
+  margin: 0;
 }
 .pedidos__reembolso p, .pedidos__devolucion p, .pedidos__horario p, .pedidos__envio p {
   font-size: 2.5vw;
@@ -191,10 +175,43 @@ body {
 .pedidos {
   background-color: #e8e6e5;
   flex-direction: column;
+  padding-top: 10vw;
+  margin-top: 30vw;
 }
 .pedidos__fila {
-  display: flex;
-  justify-content: space-between;
+  height: 30vh;
+}
+.pedidos__imagen-envio {
+  background-image: url(./media/iconos/pedidos/icono_envio.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+.pedidos__imagen-horario {
+  background-image: url(./media/iconos/pedidos/icono_horario.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+.pedidos__imagen-devolucion {
+  background-image: url(./media/iconos/pedidos/icono_devolucion.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+.pedidos__imagen-reembolso {
+  background-image: url(./media/iconos/pedidos/icono_reembolso.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */

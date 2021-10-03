@@ -24,33 +24,18 @@
 }
 
 %modulos-pedidos {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
   width: 40vw;
   height: 30vh;
   color: $color-textos;
   text-align: center;
-  /*
-  &__imagen-envio {
-    @include pedidos__iconos;
-  }
-  &__imagen-horario {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg);
-    }
-  }
-  &__imagen-devolucion {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg);
-    }
-  }
-  &__imagen-reembolso {
-    @include pedidos__iconos {
-      $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg);
-    }
-  }*/
 
   h2 {
     font-size: 3.3vw;
-    margin-bottom: 0;
+    margin: 0;
   }
   p {
     font-size: 2.5vw;
