@@ -264,7 +264,7 @@ body {
 .footer .rrss__lista-facebook {
   background-image: url(./media/iconos/rrss/icono_facebook.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -272,7 +272,7 @@ body {
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -280,7 +280,7 @@ body {
 .footer .rrss__lista-instagram {
   background-image: url(./media/iconos/rrss/icono_instagram.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -288,7 +288,7 @@ body {
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -296,7 +296,7 @@ body {
 .footer .rrss__lista-youtube {
   background-image: url(./media/iconos/rrss/icono_youtube.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
