@@ -332,7 +332,7 @@ body {
   }
 
   .footer__copyright {
-    width: 100vw;
+    @extend %ancho-completo;
     background-color: $color-corporativo;
     .footer__titulo {
       color: white;

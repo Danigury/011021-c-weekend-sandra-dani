@@ -56,7 +56,7 @@
   margin-top: 1vw;
 }
 
-.footer .boletin, .pedidos__fila, .pedidos {
+.footer .footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
@@ -378,7 +378,6 @@ body {
   padding-bottom: 0;
 }
 .footer .footer__copyright {
-  width: 100vw;
   background-color: #ff5959;
 }
 .footer .footer__copyright .footer__titulo {
