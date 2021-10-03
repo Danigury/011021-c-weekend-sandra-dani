@@ -335,6 +335,7 @@ body {
     @extend %ancho-completo;
     background-color: $color-corporativo;
   }
+
   &__titulo {
     color: white;
     @extend %display-flex-center;
