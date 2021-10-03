@@ -252,12 +252,44 @@ body {
     }
   }
   
+  .informacion {
+    @extend %display-flex-center;
+    ul {
+      padding: 0;
+      @extend %display-flex-center;
+      flex-direction: column;
+      list-style-type: none;
+      margin-bottom: 30vw;
+
+      li {
+        margin-top: 0;
+        padding-top: 0;
+        color: $color-corporativo;
+        font-size: smaller;
+        font-weight: bolder;
+      }
+    }
+    &__icono-contacto {
+      @include informacion__iconos;
+    }
+    &__icono-nosotros {
+      @include informacion__iconos(
+        $informacion__iconos: url(./media/iconos/footer/icono_nosotros.svg)
+      );
+    }
+    &__icono-condiciones {
+      @include informacion__iconos(
+        $informacion__iconos: url(./media/iconos/footer/icono_condiciones.svg)
+      );
+    }
+  }
+
   .footer__copyright {
     width: 100vw;
     background-color: $color-corporativo;
-    color: white;
-    @extend %display-flex-center;
     .footer__titulo {
+      color: white;
+      @extend %display-flex-center;
       font-weight: lighter;
       font-size: small;
     }

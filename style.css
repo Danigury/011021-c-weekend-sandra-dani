@@ -13,7 +13,8 @@
   display: inline;
 }
 
-.footer .boletin__contenedor, .footer .boletin__formulario div, .footer .boletin, .pedidos__fila, .pedidos, .cabecera__contador {
+
+.pedidos__fila, .pedidos, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .cabecera__contador {
 
   display: flex;
   justify-content: center;
@@ -254,6 +255,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.footer h2 {
+  color: #67635f;
+}
 .footer .rrss ul {
   padding: 0;
 }
@@ -267,48 +271,88 @@ body {
   background-image: url(./media/iconos/rrss/icono_facebook.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
 }
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
 }
 .footer .rrss__lista-instagram {
   background-image: url(./media/iconos/rrss/icono_instagram.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
 }
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
 }
 .footer .rrss__lista-youtube {
   background-image: url(./media/iconos/rrss/icono_youtube.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
+}
+.footer .informacion ul {
+  padding: 0;
+  flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 30vw;
+}
+.footer .informacion ul li {
+  margin-top: 0;
+  padding-top: 0;
+  color: #ff5959;
+  font-size: smaller;
+  font-weight: bolder;
+}
+.footer .informacion__icono-contacto {
+  background-image: url(./media/iconos/footer/icono_contacto.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.footer .informacion__icono-nosotros {
+  background-image: url(./media/iconos/footer/icono_nosotros.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.footer .informacion__icono-condiciones {
+  background-image: url(./media/iconos/footer/icono_condiciones.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
 }
 .footer .footer__copyright {
   width: 100vw;
   background-color: #ff5959;
-  color: white;
 }
 .footer .footer__copyright .footer__titulo {
+  color: white;
   font-weight: lighter;
   font-size: small;
 }

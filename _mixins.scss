@@ -4,8 +4,8 @@
   background-image: $contenedor-rrss;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 4vw;
-  width: 4vw;
+  height: 6vw;
+  width: 6vw;
   margin: 2px;
 }
 
@@ -18,4 +18,16 @@
   background-position: center;
   width: 20vw;
   height: 20vw;
+}
+
+@mixin informacion__iconos(
+  $informacion__iconos: url(./media/iconos/footer/icono_contacto.svg)
+) {
+  background-image: $informacion__iconos;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
 }
