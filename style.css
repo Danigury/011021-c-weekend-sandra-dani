@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.footer__titulo, .footer .informacion ul, .footer .informacion, .footer .boletin__contenedor, .footer .boletin__formulario div, .footer .boletin, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
+.boletin__titulo, .boletin .informacion ul, .boletin .informacion, .boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
   align-items: start;
 }
 
-.footer .boletin__formulario {
+.boletin__formulario {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -56,15 +56,15 @@
   margin-top: 1vw;
 }
 
-.footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
+.boletin__copyright, .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
-.footer .boletin, .pedidos__fila, .articulo, .fiestas__titulo, .cabecera__nav {
+.boletin, .pedidos__fila, .articulo, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
-.footer .boletin__formulario div a, body {
+.boletin__formulario div a, body {
   color: #67635f;
 }
 
@@ -72,7 +72,7 @@
   font-size: 3vw;
 }
 
-.footer .boletin__boton-suscribete, .fiestas .boton {
+.boletin__boton-suscribete, .fiestas .boton {
   background-color: #ff5959;
   height: 8vw;
   width: 100%;
@@ -82,7 +82,7 @@
   font-weight: bold;
   font-size: 3.2vw;
 }
-.footer .boletin__boton-suscribete:hover, .fiestas .boton:hover {
+.boletin__boton-suscribete:hover, .fiestas .boton:hover {
   background-color: rgba(229, 89, 89, 0.5);
 }
 
@@ -178,19 +178,18 @@ body {
   padding-top: 20vw;
 }
 .fiestas__titulo {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
-  font-size: 6vw;
+  border-top: 2.2px solid black;
+  border-bottom: 2.2px solid black;
+  padding: 4vw;
+  font-size: 5vw;
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   color: #000;
 }
 .fiestas .boton {
   margin-top: 50px;
-  width: 35vw;
-  height: 9vh;
+  width: 25vw;
+  height: 10vw;
 }
 
 .articulo {
@@ -325,8 +324,24 @@ body {
   width: 6vw;
   margin: 2px;
 }
+.footer .rrss__lista-facebook:active {
+  background-image: url(./media/iconos/rrss/icono_facebook-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  height: 6vw;
+  width: 6vw;
+  margin: 2px;
+}
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  height: 6vw;
+  width: 6vw;
+  margin: 2px;
+}
+.footer .rrss__lista-twitter:active {
+  background-image: url(./media/iconos/rrss/icono_twitter-hover.svg);
   background-repeat: no-repeat;
   background-size: 98%;
   height: 6vw;
@@ -341,8 +356,24 @@ body {
   width: 6vw;
   margin: 2px;
 }
+.footer .rrss__lista-instagram:active {
+  background-image: url(./media/iconos/rrss/icono_instagram-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  height: 6vw;
+  width: 6vw;
+  margin: 2px;
+}
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  height: 6vw;
+  width: 6vw;
+  margin: 2px;
+}
+.footer .rrss__lista-pinterest:active {
+  background-image: url(./media/iconos/rrss/icono_printeres-hover.svg);
   background-repeat: no-repeat;
   background-size: 98%;
   height: 6vw;
@@ -357,51 +388,23 @@ body {
   width: 6vw;
   margin: 2px;
 }
-.footer .boletin {
-  flex-direction: column;
-}
-.footer .boletin__formulario {
-  width: 100%;
-  height: 25vw;
-  flex-direction: column;
-}
-.footer .boletin__formulario div {
-  width: 100%;
-}
-.footer .boletin__contenedor {
-  flex-direction: column;
-  width: 100%;
-  height: 50vw;
-  border-top: 1px solid #67635f;
-  border-bottom: 1px solid #67635f;
-  margin: 5vw 0 5vw;
-}
-.footer .boletin__email {
-  width: 100%;
-  height: 8vw;
-  border-radius: 0;
-  border: 1px solid #67635f;
-}
-.footer .boletin__privacidad {
-  font-size: 2.5vw;
-}
-.footer .boletin__privacidad:before {
-  content: url("/media/iconos/footer/icono_checkbox.svg");
-  display: block;
-  height: 4vw;
-  width: 4vw;
-  margin-right: 1vw;
-}
-.footer .informacion {
-  margin-bottom: 15vw;
+.footer .rrss__lista-youtube:active {
+  background-image: url(./media/iconos/rrss/icono_youtube-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 98%;
+  height: 6vw;
+  width: 6vw;
+  margin: 2px;
 }
 .footer .informacion ul {
   padding: 0;
   flex-direction: column;
   list-style-type: none;
+  margin-bottom: 30vw;
 }
 .footer .informacion ul li {
-  margin: 0;
+  margin-top: 0;
+  padding-top: 0;
   color: #ff5959;
   font-size: smaller;
   font-weight: bolder;
@@ -433,10 +436,96 @@ body {
   height: 12vw;
   padding-bottom: 0;
 }
-.footer__copyright {
+.footer .footer__copyright {
+  width: 100vw;
   background-color: #ff5959;
 }
-.footer__titulo {
+.footer .footer__copyright .footer__titulo {
+  color: white;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.boletin {
+  flex-direction: column;
+}
+.boletin__formulario {
+  width: 100%;
+  height: 25vw;
+  flex-direction: column;
+}
+.boletin__formulario div {
+  width: 100%;
+}
+.boletin__contenedor {
+  flex-direction: column;
+  width: 100%;
+  height: 50vw;
+  border-top: 1px solid #67635f;
+  border-bottom: 1px solid #67635f;
+  margin: 5vw 0 5vw;
+}
+.boletin__email {
+  width: 100%;
+  height: 8vw;
+  border-radius: 0;
+  border: 1px solid #67635f;
+}
+.boletin__privacidad {
+  font-size: 2.5vw;
+}
+.boletin__privacidad:before {
+  content: url("/media/iconos/footer/icono_checkbox.svg");
+  display: block;
+  height: 4vw;
+  width: 4vw;
+  margin-right: 1vw;
+}
+.boletin .informacion {
+  margin-bottom: 15vw;
+}
+.boletin .informacion ul {
+  padding: 0;
+  flex-direction: column;
+  list-style-type: none;
+}
+.boletin .informacion ul li {
+  margin: 0;
+  color: #ff5959;
+  font-size: smaller;
+  font-weight: bolder;
+}
+.boletin .informacion__icono-contacto {
+  background-image: url(./media/iconos/footer/icono_contacto.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.boletin .informacion__icono-nosotros {
+  background-image: url(./media/iconos/footer/icono_nosotros.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.boletin .informacion__icono-condiciones {
+  background-image: url(./media/iconos/footer/icono_condiciones.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.boletin__copyright {
+  background-color: #ff5959;
+}
+.boletin__titulo {
   color: white;
   font-weight: lighter;
   font-size: small;
