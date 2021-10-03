@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .boletin__contenedor, .footer .boletin__formulario div, .footer .boletin, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
+.footer__titulo, .footer .informacion ul, .footer .informacion, .footer .boletin__contenedor, .footer .boletin__formulario div, .footer .boletin, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@
   margin-top: 1vw;
 }
 
-.footer .footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
+.footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
@@ -377,10 +377,10 @@ body {
   height: 12vw;
   padding-bottom: 0;
 }
-.footer .footer__copyright {
+.footer__copyright {
   background-color: #ff5959;
 }
-.footer .footer__copyright .footer__titulo {
+.footer__titulo {
   color: white;
   font-weight: lighter;
   font-size: small;

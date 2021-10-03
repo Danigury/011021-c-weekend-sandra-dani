@@ -331,14 +331,14 @@ body {
     }
   }
 
-  .footer__copyright {
+  &__copyright {
     @extend %ancho-completo;
     background-color: $color-corporativo;
-    .footer__titulo {
-      color: white;
-      @extend %display-flex-center;
-      font-weight: lighter;
-      font-size: small;
-    }
+  }
+  &__titulo {
+    color: white;
+    @extend %display-flex-center;
+    font-weight: lighter;
+    font-size: small;
   }
 }
