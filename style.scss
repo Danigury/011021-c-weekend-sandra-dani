@@ -47,6 +47,10 @@ body {
     @extend %tamano-iconos;
     background-image: url(/media/iconos/nav/icono_usuario.svg);
     background-size: 50%;
+    &:active,
+    &:hover {
+      background-image: url(/media/iconos/nav/icono_usuario-hover.svg);
+    }
   }
 
   &__iconos {
@@ -63,6 +67,10 @@ body {
     @extend %tamano-iconos;
     background-image: url(/media/iconos/nav/icono_carrito.svg);
     background-size: 60%;
+    &:active {
+      background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
+      background-color: $color-corporativo;
+    }
   }
   &__contador {
     @extend %tamano-iconos;

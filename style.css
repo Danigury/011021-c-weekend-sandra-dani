@@ -126,6 +126,9 @@ body {
   background-image: url(/media/iconos/nav/icono_usuario.svg);
   background-size: 50%;
 }
+.cabecera__usuario:active, .cabecera__usuario:hover {
+  background-image: url(/media/iconos/nav/icono_usuario-hover.svg);
+}
 .cabecera__iconos {
   display: flex;
 }
@@ -137,6 +140,10 @@ body {
 .cabecera__carrito {
   background-image: url(/media/iconos/nav/icono_carrito.svg);
   background-size: 60%;
+}
+.cabecera__carrito:active {
+  background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
+  background-color: #ff5959;
 }
 .cabecera__contador {
   background-color: #ff5959;
