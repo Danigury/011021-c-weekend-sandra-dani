@@ -217,6 +217,7 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 80%;
 }
 .pedidos__imagen-horario {
   background-image: url(./media/iconos/pedidos/icono_horario.svg);
@@ -225,6 +226,7 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 50%;
 }
 .pedidos__imagen-devolucion {
   background-image: url(./media/iconos/pedidos/icono_devolucion.svg);

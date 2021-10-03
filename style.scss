@@ -167,6 +167,7 @@ body {
   }
   &__imagen-envio {
     @include pedidos__iconos;
+    background-size: 80%;
   }
 
   &__horario {
@@ -176,6 +177,7 @@ body {
     @include pedidos__iconos(
       $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg)
     );
+    background-size: 50%;
   }
 
   &__devolucion {
