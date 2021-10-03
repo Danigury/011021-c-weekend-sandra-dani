@@ -13,8 +13,7 @@
   display: inline;
 }
 
-.boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .pedidos__fila, .pedidos, .cabecera__contador {
-
+.footer__titulo, .footer .informacion ul, .footer .informacion, .footer .boletin__contenedor, .footer .boletin__contenedor-checkout, .footer .boletin, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,13 +25,7 @@
   align-items: start;
 }
 
-.boletin__formulario {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
-.cabecera__nav {
+.footer .boletin__formulario, .cabecera__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,17 +50,15 @@
   margin-top: 1vw;
 }
 
-
-.boletin, .pedidos__fila, .pedidos {
+.footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
-.boletin, .pedidos__fila, .fiestas__titulo, .cabecera__nav {
-
+.footer .boletin, .pedidos__fila, .articulo, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
-.boletin__formulario div a, body {
+.footer .boletin__contenedor-checkout a, body {
   color: #67635f;
 }
 
@@ -75,8 +66,7 @@
   font-size: 3vw;
 }
 
-.boletin__boton-suscribete, .fiestas .boton {
-
+.footer .boletin__boton-suscribete, .fiestas .boton {
   background-color: #ff5959;
   height: 8vw;
   width: 100%;
@@ -133,9 +123,6 @@ body {
   background-image: url(/media/iconos/nav/icono_usuario.svg);
   background-size: 50%;
 }
-.cabecera__usuario:active, .cabecera__usuario:hover {
-  background-image: url(/media/iconos/nav/icono_usuario-hover.svg);
-}
 .cabecera__iconos {
   display: flex;
 }
@@ -147,10 +134,6 @@ body {
 .cabecera__carrito {
   background-image: url(/media/iconos/nav/icono_carrito.svg);
   background-size: 60%;
-}
-.cabecera__carrito:active, .cabecera__carrito:hover {
-  background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
-  background-color: #ff5959;
 }
 .cabecera__contador {
   background-color: #ff5959;
@@ -182,23 +165,19 @@ body {
   padding-top: 20vw;
 }
 .fiestas__titulo {
-
-  border: 2.2px solid black;
-  border-right: 0;
-  border-left: 0;
-  padding: 4vw;
-  font-size: 5vw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-size: 6vw;
   font-weight: bold;
-  letter-spacing: 4px;
-}
-.fiestas img {
-  width: 350px;
-  height: 170px;
+  letter-spacing: 6px;
+  color: #000;
 }
 .fiestas .boton {
   margin-top: 50px;
-  width: 25vw;
-  height: 10vw;
+  width: 35vw;
+  height: 9vh;
 }
 
 .articulo {
@@ -231,18 +210,6 @@ body {
 .pedidos__fila {
   height: 30vh;
 }
-.pedidos__envio:hover, .pedidos__envio:active {
-  color: #ff5959;
-}
-.pedidos__envio:hover .pedidos__imagen-envio, .pedidos__envio:active .pedidos__imagen-envio {
-  background-image: url(./media/iconos/pedidos/icono_envio-hover.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-  width: 20vw;
-  height: 20vw;
-  background-size: 80%;
-}
 .pedidos__imagen-envio {
   background-image: url(./media/iconos/pedidos/icono_envio.svg);
   background-repeat: no-repeat;
@@ -251,18 +218,6 @@ body {
   width: 20vw;
   height: 20vw;
   background-size: 80%;
-}
-.pedidos__horario:hover, .pedidos__horario:active {
-  color: #ff5959;
-}
-.pedidos__horario:hover .pedidos__imagen-horario, .pedidos__horario:active .pedidos__imagen-horario {
-  background-image: url(./media/iconos/pedidos/icono_horario-hover.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-  width: 20vw;
-  height: 20vw;
-  background-size: 50%;
 }
 .pedidos__imagen-horario {
   background-image: url(./media/iconos/pedidos/icono_horario.svg);
@@ -273,30 +228,8 @@ body {
   height: 20vw;
   background-size: 50%;
 }
-.pedidos__devolucion:hover, .pedidos__devolucion:active {
-  color: #ff5959;
-}
-.pedidos__devolucion:hover .pedidos__imagen-devolucion, .pedidos__devolucion:active .pedidos__imagen-devolucion {
-  background-image: url(./media/iconos/pedidos/icono_devolucion-hover.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-  width: 20vw;
-  height: 20vw;
-}
 .pedidos__imagen-devolucion {
   background-image: url(./media/iconos/pedidos/icono_devolucion.svg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-  width: 20vw;
-  height: 20vw;
-}
-.pedidos__reembolso:hover, .pedidos__reembolso:active {
-  color: #ff5959;
-}
-.pedidos__reembolso:hover .pedidos__imagen-reembolso, .pedidos__reembolso:active .pedidos__imagen-reembolso {
-  background-image: url(./media/iconos/pedidos/icono_reembolso-hover.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
@@ -333,26 +266,10 @@ body {
   width: 6vw;
   margin: 2px;
 }
-.footer .rrss__lista-facebook:active {
-  background-image: url(./media/iconos/rrss/icono_facebook-hover.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 6vw;
-  width: 6vw;
-  margin: 2px;
-}
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
   background-repeat: no-repeat;
   background-size: 98%;
-  height: 6vw;
-  width: 6vw;
-  margin: 2px;
-}
-.footer .rrss__lista-twitter:active {
-  background-image: url(./media/iconos/rrss/icono_twitter-hover.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -365,26 +282,10 @@ body {
   width: 6vw;
   margin: 2px;
 }
-.footer .rrss__lista-instagram:active {
-  background-image: url(./media/iconos/rrss/icono_instagram-hover.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 6vw;
-  width: 6vw;
-  margin: 2px;
-}
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
   background-repeat: no-repeat;
   background-size: 98%;
-  height: 6vw;
-  width: 6vw;
-  margin: 2px;
-}
-.footer .rrss__lista-pinterest:active {
-  background-image: url(./media/iconos/rrss/icono_printeres-hover.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -397,15 +298,51 @@ body {
   width: 6vw;
   margin: 2px;
 }
-
-.footer .rrss__lista-youtube:active {
-  background-image: url(./media/iconos/rrss/icono_youtube-hover.svg);
+.footer .boletin {
+  flex-direction: column;
+}
+.footer .boletin__contenedor-checkout {
+  background-color: aqua;
+  width: 100%;
+}
+.footer .boletin__formulario {
+  width: 100%;
+  height: 25vw;
+  flex-direction: column;
+}
+.footer .boletin__contenedor {
+  flex-direction: column;
+  width: 100%;
+  height: 50vw;
+  border-top: 1px solid #67635f;
+  border-bottom: 1px solid #67635f;
+  margin: 5vw 0 5vw;
+}
+.footer .boletin__email {
+  width: 100%;
+  height: 8vw;
+  border-radius: 0;
+  border: 1px solid #67635f;
+}
+.footer .boletin__checkout {
+  background-image: url(/media/iconos/footer/icono_checkbox.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 6vw;
-  width: 6vw;
-  margin: 2px;
-
+  height: 4vw;
+  width: 4vw;
+  margin-right: 10px;
+}
+.footer .boletin__checkout:active {
+  background-image: url(/media/iconos/footer/icono_checkbox-click.svg);
+  background-repeat: no-repeat;
+  height: 4vw;
+  width: 4vw;
+  margin-right: 10px;
+}
+.footer .boletin__privacidad {
+  font-size: 2.5vw;
+}
+.footer .informacion {
+  margin-bottom: 15vw;
 }
 .footer .informacion ul {
   padding: 0;
@@ -453,42 +390,5 @@ body {
   font-weight: lighter;
   font-size: small;
 }
-
-.boletin {
-  flex-direction: column;
-}
-.boletin__formulario {
-  width: 100%;
-  height: 25vw;
-  flex-direction: column;
-}
-.boletin__formulario div {
-  width: 100%;
-}
-.boletin__contenedor {
-  flex-direction: column;
-  width: 100%;
-  height: 50vw;
-  border-top: 1px solid #67635f;
-  border-bottom: 1px solid #67635f;
-  margin: 5vw 0 5vw;
-}
-.boletin__email {
-  width: 100%;
-  height: 8vw;
-  border-radius: 0;
-  border: 1px solid #67635f;
-}
-.boletin__privacidad {
-  font-size: 2.5vw;
-}
-.boletin__privacidad:before {
-  content: url("/media/iconos/footer/icono_checkbox.svg");
-  display: block;
-  height: 4vw;
-  width: 4vw;
-  margin-right: 1vw;
-}
-
 
 /*# sourceMappingURL=style.css.map */
