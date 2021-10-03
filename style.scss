@@ -22,12 +22,10 @@ body {
 
   &__nav {
     @extend %padding-laterales;
+    @extend %display-flex-center-between;
     background-color: $color-3;
     width: 100vw;
-    display: flex;
     height: 50px;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     z-index: 1;
     top: 0;
