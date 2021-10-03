@@ -25,10 +25,16 @@
   align-items: start;
 }
 
-.boletin__formulario, .cabecera__nav {
+.boletin__formulario {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.cabecera__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
