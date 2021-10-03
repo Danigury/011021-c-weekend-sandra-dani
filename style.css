@@ -14,6 +14,7 @@
 }
 
 .boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .pedidos__fila, .pedidos, .cabecera__contador {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +30,12 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.cabecera__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
@@ -50,11 +57,13 @@
   margin-top: 1vw;
 }
 
+
 .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
 .boletin, .pedidos__fila, .fiestas__titulo, .cabecera__nav {
+
   padding: 0 16vw 0;
 }
 
@@ -67,6 +76,7 @@
 }
 
 .boletin__boton-suscribete, .fiestas .boton {
+
   background-color: #ff5959;
   height: 8vw;
   width: 100%;
@@ -75,6 +85,13 @@
   color: white;
   font-weight: bold;
   font-size: 3.2vw;
+}
+.footer .boletin__boton-suscribete:hover, .fiestas .boton:hover {
+  background-color: rgba(229, 89, 89, 0.5);
+}
+
+.footer .rrss, .pedidos {
+  padding-top: 10vw;
 }
 
 * {
@@ -96,10 +113,7 @@ body {
 .cabecera__nav {
   background-color: #f8f8f8;
   width: 100vw;
-  display: flex;
   height: 50px;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -119,6 +133,9 @@ body {
   background-image: url(/media/iconos/nav/icono_usuario.svg);
   background-size: 50%;
 }
+.cabecera__usuario:active, .cabecera__usuario:hover {
+  background-image: url(/media/iconos/nav/icono_usuario-hover.svg);
+}
 .cabecera__iconos {
   display: flex;
 }
@@ -130,6 +147,10 @@ body {
 .cabecera__carrito {
   background-image: url(/media/iconos/nav/icono_carrito.svg);
   background-size: 60%;
+}
+.cabecera__carrito:active, .cabecera__carrito:hover {
+  background-image: url(/media/iconos/nav/icono_carrito-hover.svg);
+  background-color: #ff5959;
 }
 .cabecera__contador {
   background-color: #ff5959;
@@ -143,9 +164,6 @@ body {
 
 /*FIESTAS*/
 .contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
 }
@@ -154,19 +172,17 @@ body {
 }
 .contenedor-principal__imagen {
   position: absolute;
-  top: -5.27%;
+  top: -5%;
 }
 
 .fiestas {
   background-color: #f8f8f8;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 20vw;
 }
 .fiestas__titulo {
+
   border: 2.2px solid black;
   border-right: 0;
   border-left: 0;
@@ -197,23 +213,35 @@ body {
   align-items: center;
   background-color: #fff;
   background: rgba(255, 255, 255, 0.8784313725);
-  height: 80px;
-  width: 200px;
+  height: 12vh;
+  width: 42vw;
 }
 .articulo__titulo h3 {
-  padding-left: 30px;
+  padding-left: 5vw;
   color: #67635f;
+  font-size: 4vw;
 }
 
 /*PEDIDOS*/
 .pedidos {
   background-color: #e8e6e5;
   flex-direction: column;
-  padding-top: 10vw;
   margin-top: 30vw;
 }
 .pedidos__fila {
   height: 30vh;
+}
+.pedidos__envio:hover, .pedidos__envio:active {
+  color: #ff5959;
+}
+.pedidos__envio:hover .pedidos__imagen-envio, .pedidos__envio:active .pedidos__imagen-envio {
+  background-image: url(./media/iconos/pedidos/icono_envio-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+  background-size: 80%;
 }
 .pedidos__imagen-envio {
   background-image: url(./media/iconos/pedidos/icono_envio.svg);
@@ -222,6 +250,19 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 80%;
+}
+.pedidos__horario:hover, .pedidos__horario:active {
+  color: #ff5959;
+}
+.pedidos__horario:hover .pedidos__imagen-horario, .pedidos__horario:active .pedidos__imagen-horario {
+  background-image: url(./media/iconos/pedidos/icono_horario-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+  background-size: 50%;
 }
 .pedidos__imagen-horario {
   background-image: url(./media/iconos/pedidos/icono_horario.svg);
@@ -230,9 +271,32 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 50%;
+}
+.pedidos__devolucion:hover, .pedidos__devolucion:active {
+  color: #ff5959;
+}
+.pedidos__devolucion:hover .pedidos__imagen-devolucion, .pedidos__devolucion:active .pedidos__imagen-devolucion {
+  background-image: url(./media/iconos/pedidos/icono_devolucion-hover.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
 }
 .pedidos__imagen-devolucion {
   background-image: url(./media/iconos/pedidos/icono_devolucion.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+.pedidos__reembolso:hover, .pedidos__reembolso:active {
+  color: #ff5959;
+}
+.pedidos__reembolso:hover .pedidos__imagen-reembolso, .pedidos__reembolso:active .pedidos__imagen-reembolso {
+  background-image: url(./media/iconos/pedidos/icono_reembolso-hover.svg);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
@@ -251,9 +315,6 @@ body {
 /*FOOTER*/
 .footer {
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .footer .rrss ul {
@@ -262,13 +323,12 @@ body {
 .footer .rrss__lista {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   list-style-type: none;
 }
 .footer .rrss__lista-facebook {
   background-image: url(./media/iconos/rrss/icono_facebook.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -284,7 +344,7 @@ body {
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -300,7 +360,7 @@ body {
 .footer .rrss__lista-instagram {
   background-image: url(./media/iconos/rrss/icono_instagram.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -316,7 +376,7 @@ body {
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -332,11 +392,12 @@ body {
 .footer .rrss__lista-youtube {
   background-image: url(./media/iconos/rrss/icono_youtube.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
 }
+
 .footer .rrss__lista-youtube:active {
   background-image: url(./media/iconos/rrss/icono_youtube-hover.svg);
   background-repeat: no-repeat;
@@ -344,16 +405,15 @@ body {
   height: 6vw;
   width: 6vw;
   margin: 2px;
+
 }
 .footer .informacion ul {
   padding: 0;
   flex-direction: column;
   list-style-type: none;
-  margin-bottom: 30vw;
 }
 .footer .informacion ul li {
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
   color: #ff5959;
   font-size: smaller;
   font-weight: bolder;
@@ -385,11 +445,10 @@ body {
   height: 12vw;
   padding-bottom: 0;
 }
-.footer .footer__copyright {
-  width: 100vw;
+.footer__copyright {
   background-color: #ff5959;
 }
-.footer .footer__copyright .footer__titulo {
+.footer__titulo {
   color: white;
   font-weight: lighter;
   font-size: small;
@@ -430,5 +489,6 @@ body {
   width: 4vw;
   margin-right: 1vw;
 }
+
 
 /*# sourceMappingURL=style.css.map */
