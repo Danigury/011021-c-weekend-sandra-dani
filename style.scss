@@ -1,5 +1,6 @@
 @import "configs";
 @import "extends";
+@import "mixins";
 
 * {
   box-sizing: border-box;
@@ -79,6 +80,24 @@ body {
   }
 }
 
+/*FIESTAS*/
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  .contenedor-articulos {
+    margin-top: 50px;
+  }
+
+  &__imagen {
+    position: absolute;
+    top: -5.27%;
+  }
+}
+
 .fiestas {
   background-color: $color-3;
   width: 100vw;
@@ -87,34 +106,28 @@ body {
   align-items: center;
   flex-direction: column;
   padding-top: 100px;
-}
 
-.contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-
-  &__imagen {
-    position: absolute;
-    top: -4.5%;
-  }
-}
-
-.fiestas {
   &__titulo {
     border: 3px solid black;
     border-right: 0;
     border-left: 0;
     padding: 20px 50px 20px 50px;
-    font-size: 22px;
+    font-size: 5vw;
     font-weight: 900;
     letter-spacing: 6px;
   }
   img {
     width: 350px;
     height: 170px;
+  }
+  .boton {
+    margin-top: 50px;
+    background-color: $color-corporativo;
+    height: 45px;
+    width: 100px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    border: none;
   }
 }
 
@@ -135,6 +148,52 @@ body {
 
     h3 {
       padding-left: 30px;
+      color: $color-textos;
+    }
+  }
+}
+
+.footer {
+  background-color: $color-3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .rrss {
+    &__titulo {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__lista {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      list-style-type: none;
+    }
+
+    &__lista-facebook {
+      @include contenedor-rrss;
+    }
+    &__lista-twitter {
+      @include contenedor-rrss(
+        $contenedor-rrss: url(./media/iconos/rrss/icono_twitter.svg)
+      );
+    }
+    &__lista-instagram {
+      @include contenedor-rrss(
+        $contenedor-rrss: url(./media/iconos/rrss/icono_instagram.svg)
+      );
+    }
+    &__lista-pinterest {
+      @include contenedor-rrss(
+        $contenedor-rrss: url(./media/iconos/rrss/icono_printeres.svg)
+      );
+    }
+    &__lista-youtube {
+      @include contenedor-rrss(
+        $contenedor-rrss: url(./media/iconos/rrss/icono_youtube.svg)
+      );
     }
   }
 }

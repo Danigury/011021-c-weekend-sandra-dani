@@ -112,6 +112,22 @@ body {
   align-items: flex-start;
 }
 
+/*FIESTAS*/
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.contenedor-principal .contenedor-articulos {
+  margin-top: 50px;
+}
+.contenedor-principal__imagen {
+  position: absolute;
+  top: -5.27%;
+}
+
 .fiestas {
   background-color: #f8f8f8;
   width: 100vw;
@@ -121,31 +137,27 @@ body {
   flex-direction: column;
   padding-top: 100px;
 }
-
-.contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.contenedor-principal__imagen {
-  position: absolute;
-  top: -4.5%;
-}
-
 .fiestas__titulo {
   border: 3px solid black;
   border-right: 0;
   border-left: 0;
   padding: 20px 50px 20px 50px;
-  font-size: 22px;
+  font-size: 5vw;
   font-weight: 900;
   letter-spacing: 6px;
 }
 .fiestas img {
   width: 350px;
   height: 170px;
+}
+.fiestas .boton {
+  margin-top: 50px;
+  background-color: #ff5959;
+  height: 45px;
+  width: 100px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  border: none;
 }
 
 .articulo {
@@ -165,6 +177,60 @@ body {
 }
 .articulo__titulo h3 {
   padding-left: 30px;
+  color: #67635f;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .rrss__titulo {
+  display: flex;
+  justify-content: center;
+}
+.footer .rrss__lista {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.footer .rrss__lista-facebook {
+  background-image: url(./media/iconos/rrss/icono_facebook.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
+}
+.footer .rrss__lista-twitter {
+  background-image: url(./media/iconos/rrss/icono_twitter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
+}
+.footer .rrss__lista-instagram {
+  background-image: url(./media/iconos/rrss/icono_instagram.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
+}
+.footer .rrss__lista-pinterest {
+  background-image: url(./media/iconos/rrss/icono_printeres.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
+}
+.footer .rrss__lista-youtube {
+  background-image: url(./media/iconos/rrss/icono_youtube.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
 }
 
 /*PEDIDOS*/
