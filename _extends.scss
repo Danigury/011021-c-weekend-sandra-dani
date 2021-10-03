@@ -80,6 +80,9 @@
   color: white;
   font-weight: bold;
   font-size: 3.2vw;
+  &:hover {
+    background-color: rgba(229, 89, 89, 0.5);
+  }
 }
 
 %padding-top-secciones {

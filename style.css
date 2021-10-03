@@ -82,6 +82,9 @@
   font-weight: bold;
   font-size: 3.2vw;
 }
+.footer .boletin__boton-suscribete:hover, .fiestas .boton:hover {
+  background-color: rgba(229, 89, 89, 0.5);
+}
 
 .footer .rrss, .pedidos {
   padding-top: 10vw;
