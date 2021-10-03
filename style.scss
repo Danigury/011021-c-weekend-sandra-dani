@@ -91,7 +91,7 @@ body {
 
   &__imagen {
     position: absolute;
-    top: -5.27%;
+    top: -5%;
   }
 }
 
@@ -100,16 +100,18 @@ body {
   width: 100vw;
   @extend %display-flex-center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 20vw;
 
   &__titulo {
-    border: 3px solid black;
-    border-right: 0;
-    border-left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     @extend %padding-laterales;
-    font-size: 5vw;
-    font-weight: 900;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-size: 6vw;
+    font-weight: bold;
     letter-spacing: 6px;
+    color: $color-5;
   }
   img {
     width: 350px;
