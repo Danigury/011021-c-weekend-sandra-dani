@@ -81,9 +81,7 @@ body {
 
 /*FIESTAS*/
 .contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %display-flex-center;
   flex-direction: column;
   position: relative;
 

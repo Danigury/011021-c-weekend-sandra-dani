@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .pedidos__fila, .pedidos, .cabecera__contador {
+.boletin__contenedor, .boletin__formulario div, .boletin, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .pedidos__fila, .pedidos, .contenedor-principal, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,9 +146,6 @@ body {
 
 /*FIESTAS*/
 .contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
 }
