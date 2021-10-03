@@ -22,10 +22,16 @@
   justify-content: center;
   align-items: start;
 }
-%display-flex-center-between {
+%display-flex-start-between {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+%display-flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 %modulos-pedidos {
@@ -74,4 +80,8 @@
   color: white;
   font-weight: bold;
   font-size: 3.2vw;
+}
+
+%padding-top-secciones {
+  padding-top: 10vw;
 }

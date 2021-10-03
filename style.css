@@ -13,9 +13,7 @@
   display: inline;
 }
 
-
-.pedidos__fila, .pedidos, .footer .footer__copyright .footer__titulo, .footer .informacion ul, .footer .informacion, .footer .rrss__titulo, .cabecera__contador {
-
+.footer__titulo, .footer .informacion ul, .footer .informacion, .footer .boletin__contenedor, .footer .boletin__formulario div, .footer .boletin, .footer .rrss__titulo, .footer, .pedidos__fila, .pedidos, .fiestas, .contenedor-principal, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +29,12 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.cabecera__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pedidos__reembolso, .pedidos__devolucion, .pedidos__horario, .pedidos__envio {
@@ -52,11 +56,11 @@
   margin-top: 1vw;
 }
 
-.footer .boletin, .pedidos__fila, .pedidos {
+.footer__copyright, .footer .boletin, .pedidos__fila, .pedidos {
   width: 100vw;
 }
 
-.footer .boletin, .pedidos__fila, .cabecera__nav {
+.footer .boletin, .pedidos__fila, .articulo, .fiestas__titulo, .cabecera__nav {
   padding: 0 16vw 0;
 }
 
@@ -68,7 +72,7 @@
   font-size: 3vw;
 }
 
-.footer .boletin__boton-suscribete {
+.footer .boletin__boton-suscribete, .fiestas .boton {
   background-color: #ff5959;
   height: 8vw;
   width: 100%;
@@ -77,6 +81,10 @@
   color: white;
   font-weight: bold;
   font-size: 3.2vw;
+}
+
+.footer .rrss, .pedidos {
+  padding-top: 10vw;
 }
 
 * {
@@ -98,10 +106,7 @@ body {
 .cabecera__nav {
   background-color: #f8f8f8;
   width: 100vw;
-  display: flex;
   height: 50px;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -145,9 +150,6 @@ body {
 
 /*FIESTAS*/
 .contenedor-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   position: relative;
 }
@@ -156,32 +158,29 @@ body {
 }
 .contenedor-principal__imagen {
   position: absolute;
-  top: -5.27%;
+  top: -5%;
 }
 
 .fiestas {
   background-color: #f8f8f8;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 20vw;
 }
 .fiestas__titulo {
-  border: 3px solid black;
-  border-right: 0;
-  border-left: 0;
-  font-size: 5vw;
-  font-weight: 900;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  font-size: 6vw;
+  font-weight: bold;
   letter-spacing: 6px;
-}
-.fiestas img {
-  width: 350px;
-  height: 170px;
+  color: #000;
 }
 .fiestas .boton {
   margin-top: 50px;
+  width: 35vw;
+  height: 9vh;
 }
 
 .articulo {
@@ -196,19 +195,19 @@ body {
   align-items: center;
   background-color: #fff;
   background: rgba(255, 255, 255, 0.8784313725);
-  height: 80px;
-  width: 200px;
+  height: 12vh;
+  width: 42vw;
 }
 .articulo__titulo h3 {
-  padding-left: 30px;
+  padding-left: 5vw;
   color: #67635f;
+  font-size: 4vw;
 }
 
 /*PEDIDOS*/
 .pedidos {
   background-color: #e8e6e5;
   flex-direction: column;
-  padding-top: 10vw;
   margin-top: 30vw;
 }
 .pedidos__fila {
@@ -221,6 +220,7 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 80%;
 }
 .pedidos__imagen-horario {
   background-image: url(./media/iconos/pedidos/icono_horario.svg);
@@ -229,6 +229,7 @@ body {
   background-position: center;
   width: 20vw;
   height: 20vw;
+  background-size: 50%;
 }
 .pedidos__imagen-devolucion {
   background-image: url(./media/iconos/pedidos/icono_devolucion.svg);
@@ -250,13 +251,7 @@ body {
 /*FOOTER*/
 .footer {
   background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-.footer h2 {
-  color: #67635f;
 }
 .footer .rrss ul {
   padding: 0;
@@ -264,13 +259,12 @@ body {
 .footer .rrss__lista {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   list-style-type: none;
 }
 .footer .rrss__lista-facebook {
   background-image: url(./media/iconos/rrss/icono_facebook.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -278,7 +272,7 @@ body {
 .footer .rrss__lista-twitter {
   background-image: url(./media/iconos/rrss/icono_twitter.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -286,7 +280,7 @@ body {
 .footer .rrss__lista-instagram {
   background-image: url(./media/iconos/rrss/icono_instagram.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -294,7 +288,7 @@ body {
 .footer .rrss__lista-pinterest {
   background-image: url(./media/iconos/rrss/icono_printeres.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
@@ -302,59 +296,10 @@ body {
 .footer .rrss__lista-youtube {
   background-image: url(./media/iconos/rrss/icono_youtube.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 98%;
   height: 6vw;
   width: 6vw;
   margin: 2px;
-}
-.footer .informacion ul {
-  padding: 0;
-  flex-direction: column;
-  list-style-type: none;
-  margin-bottom: 30vw;
-}
-.footer .informacion ul li {
-  margin-top: 0;
-  padding-top: 0;
-  color: #ff5959;
-  font-size: smaller;
-  font-weight: bolder;
-}
-.footer .informacion__icono-contacto {
-  background-image: url(./media/iconos/footer/icono_contacto.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  width: 12vw;
-  height: 12vw;
-  padding-bottom: 0;
-}
-.footer .informacion__icono-nosotros {
-  background-image: url(./media/iconos/footer/icono_nosotros.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  width: 12vw;
-  height: 12vw;
-  padding-bottom: 0;
-}
-.footer .informacion__icono-condiciones {
-  background-image: url(./media/iconos/footer/icono_condiciones.svg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center;
-  width: 12vw;
-  height: 12vw;
-  padding-bottom: 0;
-}
-.footer .footer__copyright {
-  width: 100vw;
-  background-color: #ff5959;
-}
-.footer .footer__copyright .footer__titulo {
-  color: white;
-  font-weight: lighter;
-  font-size: small;
 }
 .footer .boletin {
   flex-direction: column;
@@ -390,6 +335,55 @@ body {
   height: 4vw;
   width: 4vw;
   margin-right: 1vw;
+}
+.footer .informacion {
+  margin-bottom: 15vw;
+}
+.footer .informacion ul {
+  padding: 0;
+  flex-direction: column;
+  list-style-type: none;
+}
+.footer .informacion ul li {
+  margin: 0;
+  color: #ff5959;
+  font-size: smaller;
+  font-weight: bolder;
+}
+.footer .informacion__icono-contacto {
+  background-image: url(./media/iconos/footer/icono_contacto.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.footer .informacion__icono-nosotros {
+  background-image: url(./media/iconos/footer/icono_nosotros.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.footer .informacion__icono-condiciones {
+  background-image: url(./media/iconos/footer/icono_condiciones.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width: 12vw;
+  height: 12vw;
+  padding-bottom: 0;
+}
+.footer__copyright {
+  background-color: #ff5959;
+}
+.footer__titulo {
+  color: white;
+  font-weight: lighter;
+  font-size: small;
 }
 
 /*# sourceMappingURL=style.css.map */
