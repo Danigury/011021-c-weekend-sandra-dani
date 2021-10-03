@@ -1,3 +1,13 @@
+@mixin contenedor-rrss(
+  $contenedor-rrss: url(./media/iconos/rrss/icono_facebook.svg)
+) {
+  background-image: $contenedor-rrss;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4vw;
+  width: 4vw;
+}
+
 @mixin pedidos__iconos(
   $pedidos__iconos: url(./media/iconos/pedidos/icono_envio.svg)
 ) {
@@ -8,3 +18,5 @@
   width: 20vw;
   height: 20vw;
 }
+
+
