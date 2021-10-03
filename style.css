@@ -167,18 +167,20 @@ body {
   padding-top: 100px;
 }
 .fiestas__titulo {
-  border: 3px solid black;
+  border: 2.2px solid black;
   border-right: 0;
   border-left: 0;
+  padding: 4vw;
   font-size: 5vw;
-  font-weight: 900;
-  letter-spacing: 6px;
+  font-weight: bold;
+  letter-spacing: 4px;
 }
 .fiestas img {
   width: 350px;
   height: 170px;
 }
 .fiestas .boton {
+  margin-top: 50px;
   width: 25vw;
   height: 10vw;
 }

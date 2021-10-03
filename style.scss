@@ -110,13 +110,14 @@ body {
   padding-top: 100px;
 
   &__titulo {
-    border: 3px solid black;
+    border: 2.2px solid black;
     border-right: 0;
     border-left: 0;
+    padding: 4vw;
     @extend %padding-laterales;
     font-size: 5vw;
-    font-weight: 900;
-    letter-spacing: 6px;
+    font-weight: bold;
+    letter-spacing: 4px;
   }
   img {
     width: 350px;
@@ -124,6 +125,7 @@ body {
   }
   .boton {
     @extend %botones;
+    margin-top: 50px;
     width: 25vw;
     height: 10vw;
   }
@@ -367,6 +369,7 @@ body {
     width: 4vw;
     margin-right: 1vw;
   }
+
   &__boton-suscribete {
     @extend %botones;
   }
