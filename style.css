@@ -302,7 +302,6 @@ body {
   flex-direction: column;
 }
 .footer .boletin__contenedor-checkout {
-  background-color: aqua;
   width: 100%;
 }
 .footer .boletin__formulario {

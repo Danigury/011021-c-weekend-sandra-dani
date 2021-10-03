@@ -257,7 +257,6 @@ body {
 
     &__contenedor-checkout {
       @extend %display-flex-center;
-      background-color: aqua;
       width: 100%;
       a {
         @extend %color-textos;
