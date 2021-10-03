@@ -1,4 +1,5 @@
 @import "configs";
+@import "mixins";
 @import "extends";
 @import "mixins";
 
@@ -204,25 +205,46 @@ body {
   @extend %ancho-completo;
   background-color: $color-2;
   flex-direction: column;
+  padding-top: 10vw;
+  margin-top: 30vw;
 
   &__fila {
     @extend %ancho-completo;
-    display: flex;
-    justify-content: space-between;
+    @extend %padding-laterales;
+    @extend %display-flex-center;
+    height: 30vh;
   }
   &__envio {
     @extend %modulos-pedidos;
+  }
+  &__imagen-envio {
+    @include pedidos__iconos;
   }
 
   &__horario {
     @extend %modulos-pedidos;
   }
+  &__imagen-horario {
+    @include pedidos__iconos(
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_horario.svg)
+    );
+  }
 
   &__devolucion {
     @extend %modulos-pedidos;
   }
+  &__imagen-devolucion {
+    @include pedidos__iconos(
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_devolucion.svg)
+    );
+  }
 
   &__reembolso {
     @extend %modulos-pedidos;
+  }
+  &__imagen-reembolso {
+    @include pedidos__iconos(
+      $pedidos__iconos: url(./media/iconos/pedidos/icono_reembolso.svg)
+    );
   }
 }

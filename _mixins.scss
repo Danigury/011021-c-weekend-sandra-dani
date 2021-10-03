@@ -7,3 +7,16 @@
   height: 4vw;
   width: 4vw;
 }
+
+@mixin pedidos__iconos(
+  $pedidos__iconos: url(./media/iconos/pedidos/icono_envio.svg)
+) {
+  background-image: $pedidos__iconos;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  width: 20vw;
+  height: 20vw;
+}
+
+
