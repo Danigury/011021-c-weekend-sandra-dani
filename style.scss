@@ -98,9 +98,7 @@ body {
 .fiestas {
   background-color: $color-3;
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %display-flex-center;
   flex-direction: column;
   padding-top: 100px;
 
