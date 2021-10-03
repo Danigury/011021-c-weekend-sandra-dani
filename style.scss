@@ -266,6 +266,12 @@ body {
       width: 100%;
       flex-direction: column;
       background-color: antiquewhite;
+      div {
+        @extend %display-flex-center;
+        a {
+          @extend %color-textos;
+        }
+      }
     }
 
     &__email {
@@ -273,13 +279,17 @@ body {
       height: 8vw;
       border-radius: 0;
       border: 1px solid $color-textos;
-
-      ::before {
-        content: hola;
-      }
     }
-    &__privacidad a {
-      @extend %color-textos;
+    &__privacidad {
+      font-size: 2.5vw;
+    }
+
+    &__privacidad:before {
+      content: url("/media/iconos/footer/icono_checkbox.svg");
+      display: block;
+      height: 4vw;
+      width: 4vw;
+      margin-right: 1vw;
     }
     &__boton-suscribete {
       @extend %botones;

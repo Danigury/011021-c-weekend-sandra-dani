@@ -13,7 +13,7 @@
   display: inline;
 }
 
-.footer .boletin__formulario, .footer .boletin, .pedidos__fila, .pedidos, .cabecera__contador {
+.footer .boletin__formulario div, .footer .boletin__formulario, .footer .boletin, .pedidos__fila, .pedidos, .cabecera__contador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@
   padding: 0 16vw 0;
 }
 
-.footer .boletin__privacidad a, body {
+.footer .boletin__formulario div a, body {
   color: #67635f;
 }
 
@@ -314,8 +314,15 @@ body {
   border-radius: 0;
   border: 1px solid #67635f;
 }
-.footer .boletin__email ::before {
-  content: hola;
+.footer .boletin__privacidad {
+  font-size: 2.5vw;
+}
+.footer .boletin__privacidad:before {
+  content: url("/media/iconos/footer/icono_checkbox.svg");
+  display: block;
+  height: 4vw;
+  width: 4vw;
+  margin-right: 1vw;
 }
 
 /*# sourceMappingURL=style.css.map */
