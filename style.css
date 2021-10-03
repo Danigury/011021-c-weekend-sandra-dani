@@ -195,8 +195,9 @@ body {
   width: 42vw;
 }
 .articulo__titulo h3 {
-  padding-left: 30px;
+  padding-left: 5vw;
   color: #67635f;
+  font-size: 4vw;
 }
 
 /*PEDIDOS*/
