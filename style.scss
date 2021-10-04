@@ -493,3 +493,18 @@ body {
     font-size: small;
   }
 }
+
+///**MEDIAQUERY***///
+@media only screen and (min-width: 600px) {
+  .pedidos {
+    @extend %display-flex-center;
+    flex-direction: row;
+    padding-top: 40px;
+    &__fila {
+      width: 400px;
+      padding: 0;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
