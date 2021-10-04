@@ -113,15 +113,15 @@ body {
   width: 100vw;
   @extend %display-flex-center;
   flex-direction: column;
-  padding-top: 20vw;
+  padding-top: 140px;
 
   &__titulo {
     border-top: 2.2px solid black;
     border-bottom: 2.2px solid black;
     @extend %padding-laterales;
-    padding: 4vw;
-    font-size: 5vw;
-    font-weight: bold;
+    padding: 20px 50px 20px 50px;
+    font-size: 22px;
+    font-weight: 900;
     letter-spacing: 4px;
     color: $color-5;
   }
@@ -329,33 +329,34 @@ body {
 
   .informacion {
     @extend %display-flex-center;
-    ul {
+    .informacion__lista {
+      padding-bottom: 50px;
+    }
+    h3 {
+      color: $color-corporativo;
+      margin-top: 0;
+      font-size: 10px;
+      font-weight: normal;
+    }
+    div {
       padding: 0;
       @extend %display-flex-center;
       flex-direction: column;
       list-style-type: none;
-      margin-bottom: 30vw;
-
-      li {
-        margin-top: 0;
-        padding-top: 0;
-        color: $color-corporativo;
-        font-size: smaller;
-        font-weight: bolder;
+      margin-bottom: 0;
+      .contacto__icono-contacto {
+        @include informacion__iconos;
       }
-    }
-    &__icono-contacto {
-      @include informacion__iconos;
-    }
-    &__icono-nosotros {
-      @include informacion__iconos(
-        $informacion__iconos: url(./media/iconos/footer/icono_nosotros.svg)
-      );
-    }
-    &__icono-condiciones {
-      @include informacion__iconos(
-        $informacion__iconos: url(./media/iconos/footer/icono_condiciones.svg)
-      );
+      .nosotros__icono-nosotros {
+        @include informacion__iconos(
+          $informacion__iconos: url(./media/iconos/footer/icono_nosotros.svg)
+        );
+      }
+      .condiciones__icono-condiciones {
+        @include informacion__iconos(
+          $informacion__iconos: url(./media/iconos/footer/icono_condiciones.svg)
+        );
+      }
     }
   }
 
