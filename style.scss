@@ -402,6 +402,20 @@ body {
     a {
       @extend %color-textos;
     }
+
+    input {
+      opacity: 1;
+    }
+
+    /*input[type="checkbox"]:checked {
+      .boletin__checkout {
+        background-image: url(/media/iconos/footer/icono_checkbox-click.svg);
+        background-repeat: no-repeat;
+        height: 4vw;
+        width: 4vw;
+        margin-right: 10px;
+      }
+    }*/
   }
 
   &__email {
@@ -414,6 +428,7 @@ body {
     font-size: 2.5vw;
   }
 
+  /*
   &__checkout {
     background-image: url(/media/iconos/footer/icono_checkbox.svg);
     background-repeat: no-repeat;
@@ -421,13 +436,14 @@ body {
     width: 4vw;
     margin-right: 10px;
   }
+ 
   &__checkout:active {
     background-image: url(/media/iconos/footer/icono_checkbox-click.svg);
     background-repeat: no-repeat;
     height: 4vw;
     width: 4vw;
     margin-right: 10px;
-  }
+  }*/
 
   &__boton-suscribete {
     @extend %botones;

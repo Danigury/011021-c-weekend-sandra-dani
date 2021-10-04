@@ -151,10 +151,13 @@
           <div class="boletin__contenedor">
             <h2 class="boletin__titulo">RECIBE LAS NOVEDADES EN TU E-MAIL</h2>
             <form class="boletin__formulario">
-              <input class="boletin__email" type="email" />
+              <input class="boletin__email" type="email" required />
               <div class="boletin__contenedor-checkout">
-                <div class="boletin__checkout"></div>
-                <label class="boletin__privacidad">
+                <div class="boletin__checkout">
+                  <input type="checkbox" name="checkbox" id="acepto" required />
+                </div>
+
+                <label for="acepto" class="boletin__privacidad">
                   Acepto la <a href="#"> política de privacidad</a>
                 </label>
               </div>
