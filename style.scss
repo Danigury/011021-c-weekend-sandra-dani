@@ -157,6 +157,7 @@ body {
   @extend %display-flex-center;
   flex-direction: column;
   padding-top: 140px;
+  display: none;
 
   &__titulo {
     @extend %titulos;
@@ -528,11 +529,17 @@ body {
     @extend %display-flex-center;
     flex-direction: row;
     padding-top: 40px;
+    margin-top: 60px;
     &__fila {
       width: 400px;
       padding: 0;
       justify-content: space-evenly;
       align-items: center;
     }
+  }
+
+  .marcas {
+    display: flex;
+    padding-top: 50px;
   }
 }
