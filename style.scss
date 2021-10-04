@@ -116,14 +116,7 @@ body {
   padding-top: 140px;
 
   &__titulo {
-    border-top: 2.2px solid black;
-    border-bottom: 2.2px solid black;
-    @extend %padding-laterales;
-    padding: 20px 50px 20px 50px;
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: 4px;
-    color: $color-5;
+    @extend %titulos;
   }
 
   .boton {
@@ -155,6 +148,41 @@ body {
       color: $color-textos;
       font-size: 18px;
     }
+  }
+}
+
+/*MARCAS*/
+.marcas {
+  @extend %ancho-completo;
+  @extend %display-flex-center;
+  flex-direction: column;
+  padding-top: 140px;
+
+  &__titulo {
+    @extend %titulos;
+  }
+
+  &__logos {
+    @extend %display-flex-center;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  &__imagenes {
+    height: 75px;
+    margin: 10px;
+    filter: grayscale(100%);
+    transition: all 0.4s ease;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  .boton {
+    @extend %botones;
+    margin-top: 50px;
+    width: 150px;
+    height: 60px;
   }
 }
 
