@@ -555,4 +555,50 @@ body {
       align-items: center;
     }
   }
+  .footer__lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    .rrss {
+      div {
+        width: 30px;
+        height: 30px;
+      }
+      margin-right: 160px;
+    }
+
+    .boletin {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 400px;
+      border-left: 1px solid $color-textos;
+      border-right: 1px solid $color-textos;
+      .boletin__contenedor {
+        border: 0;
+      }
+    }
+
+    .informacion {
+      display: flex;
+      flex-direction: row;
+      padding-right: 30px;
+      .informacion__lista {
+        display: flex;
+        flex-direction: row;
+        h3 {
+          font-size: 15px;
+        }
+        .informacion__lista-contacto {
+          width: 180px;
+        }
+        .informacion__lista-nosotros {
+          width: 180px;
+        }
+        .informacion__lista-condiciones {
+          width: 180px;
+        }
+      }
+    }
+  }
 }
