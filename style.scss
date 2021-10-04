@@ -104,13 +104,13 @@ body {
 
   &__imagen {
     position: absolute;
-    top: -5%;
+    top: -60px;
   }
 }
 
 .fiestas {
   background-color: $color-3;
-  width: 100vw;
+  @extend %ancho-completo;
   @extend %display-flex-center;
   flex-direction: column;
   padding-top: 140px;
@@ -129,8 +129,8 @@ body {
   .boton {
     @extend %botones;
     margin-top: 50px;
-    width: 25vw;
-    height: 10vw;
+    width: 150px;
+    height: 60px;
   }
 }
 
@@ -147,13 +147,13 @@ body {
     align-items: center;
     background-color: $color-4;
     background: opacify($color: #ffffffe0, $amount: 0);
-    height: 12vh;
-    width: 42vw;
+    height: 75px;
+    width: 200px;
 
     h3 {
-      padding-left: 5vw;
+      padding-left: 20px;
       color: $color-textos;
-      font-size: 4vw;
+      font-size: 18px;
     }
   }
 }
@@ -335,7 +335,7 @@ body {
     h3 {
       color: $color-corporativo;
       margin-top: 0;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: normal;
     }
     div {

@@ -7,7 +7,7 @@
 
 %enlaces-iconos {
   text-decoration: none;
-  font-size: 130%;
+  font-size: 20px;
   display: inline;
 }
 
@@ -39,17 +39,17 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  width: 40vw;
-  height: 30vh;
+  width: 200px;
+  height: 200px;
   color: $color-textos;
   text-align: center;
 
   h2 {
-    font-size: 3.3vw;
+    font-size: 16px;
     margin: 0;
   }
   p {
-    font-size: 2.5vw;
+    font-size: 12px;
     margin-top: 1vw;
   }
 }
@@ -67,19 +67,19 @@
 }
 
 %titulos-boletin {
-  font-size: 3vw;
+  font-size: 16px;
 }
 
 %botones {
   background-color: $color-corporativo;
-  height: 8vw;
+  height: 50px;
   width: 100%;
   border: 0;
 
   font-family: "Source Sans Pro", sans-serif;
   color: white;
   font-weight: bold;
-  font-size: 3.2vw;
+  font-size: 18px;
   &:hover {
     background-color: rgba(229, 89, 89, 0.5);
   }
