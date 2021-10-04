@@ -88,3 +88,14 @@
 %padding-top-secciones {
   padding-top: 10vw;
 }
+
+%titulos {
+  border-top: 2.2px solid black;
+  border-bottom: 2.2px solid black;
+  @extend %padding-laterales;
+  padding: 20px 50px 20px 50px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: $color-5;
+}
