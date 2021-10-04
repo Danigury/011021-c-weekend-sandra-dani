@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "complie-css": "npx sass style.scss style.css"
+  },
   "devDependencies": {
     "sass": "^1.42.1"
   }
