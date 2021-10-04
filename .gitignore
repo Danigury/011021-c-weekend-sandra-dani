@@ -105,5 +105,5 @@ dist
 
 
 # Archivos .css y .css.map
-*.css
-*.css.map
+style.css
+style.css.map
